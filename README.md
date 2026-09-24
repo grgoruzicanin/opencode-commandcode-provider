@@ -116,8 +116,6 @@ Supported options:
 - `planRefreshIntervalMs`: refresh interval for subscription-plan lookup. Default: 5 minutes.
 - `accountBaseURL`, `modelsURL`, `npmRegistryBaseURL`: advanced endpoint overrides for development/testing.
 
-`CMD_ZDR=1` is passed through to Command Code requests as before.
-
 ## How model discovery works
 
 The live model IDs, names, context lengths, and endpoint availability come from Command Code's runtime model endpoint. Extra metadata such as plan floor, price, reasoning variants, and output limits is refreshed separately from the current `command-code` npm package and cached through OpenCode's plugin storage.
