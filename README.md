@@ -32,6 +32,24 @@ For local development, point `plugins` at the repository directory instead:
 }
 ```
 
+## Update
+
+For the Git plugin installed above, first check whether an update is available:
+
+```bash
+opencode plugin check github:grgoruzicanin/opencode-commandcode-provider
+```
+
+Then update it:
+
+```bash
+opencode plugin update github:grgoruzicanin/opencode-commandcode-provider
+```
+
+To update every outdated package plugin, run `opencode plugin update` without an argument. Restart OpenCode if it is already running so the updated provider is loaded.
+
+If you use the local-development configuration, update the repository instead (for example, `git pull`) and restart OpenCode.
+
 ## Connect
 
 In OpenCode, run:
