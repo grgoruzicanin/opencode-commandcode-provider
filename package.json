@@ -1,0 +1,32 @@
+{
+  "name": "opencode-commandcode-provider",
+  "version": "3.0.0",
+  "description": "Command Code subscription provider for OpenCode 2 with live models and native usage commands.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./runtime": "./src/runtime.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/index.js && node --check src/catalog.js && node --check src/account.js && node --check src/runtime.js"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "command-code",
+    "commandcode",
+    "ai-sdk",
+    "provider"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
