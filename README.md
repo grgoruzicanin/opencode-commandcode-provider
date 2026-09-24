@@ -83,7 +83,7 @@ The defaults are intended for normal use. If needed, use the object form in `ope
       "package": "github:grgoruzicanin/opencode-commandcode-provider",
       "options": {
         "modelMode": "subscription",
-        "refreshIntervalMs": 60000
+        "refreshIntervalMs": 3600000
       }
     }
   ]
@@ -93,8 +93,8 @@ The defaults are intended for normal use. If needed, use the object form in `ope
 Supported options:
 
 - `modelMode`: `"subscription"` or `"full"`.
-- `refreshIntervalMs`: live model refresh interval. Default: 60 seconds; minimum: 15 seconds.
-- `metadataRefreshIntervalMs`: refresh interval for Command Code package metadata used for pricing, reasoning variants, limits, and plan filtering. Default: 6 hours. The live model list still refreshes every 60 seconds.
+- `refreshIntervalMs`: live model refresh interval. Default: 1 hour; minimum: 15 seconds.
+- `metadataRefreshIntervalMs`: refresh interval for Command Code package metadata used for pricing, reasoning variants, limits, and plan filtering. Default: 6 hours. The live model list refreshes every hour by default.
 - `planRefreshIntervalMs`: refresh interval for subscription-plan lookup. Default: 5 minutes.
 - `accountBaseURL`, `modelsURL`, `npmRegistryBaseURL`: advanced endpoint overrides for development/testing.
 

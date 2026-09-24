@@ -9,7 +9,7 @@ export const DEFAULT_ACCOUNT_API_BASE = "https://api.commandcode.ai"
 export const DEFAULT_MODELS_URL = "https://api.commandcode.ai/provider/v1/models"
 export const DEFAULT_NPM_REGISTRY_BASE = "https://registry.npmjs.org"
 
-export const DEFAULT_REFRESH_MS = 60_000
+export const DEFAULT_REFRESH_MS = 60 * 60_000
 export const DEFAULT_METADATA_REFRESH_MS = 6 * 60 * 60_000
 export const DEFAULT_PLAN_REFRESH_MS = 5 * 60_000
 
